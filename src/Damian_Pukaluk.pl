@@ -692,7 +692,6 @@ makeLinesOfCommands([H|T], N, 4, AccNum, Acc, AccRes, Result) :-
     addInTheFront(Res2, [Line|AccRes], NewRes),
     makeLinesOfCommands(T, NewN, 0, [], [], NewRes, Result), !.
 
-
 makeLinesOfCommands([H|T], N, Cnt, AccNum, Acc, AccRes, Result) :-
     string(H), !,
     NewCnt is Cnt+1,
