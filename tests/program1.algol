@@ -1,0 +1,10 @@
+program complex
+  local x
+begin
+  read x;
+  if x > 1000 then
+     write x
+  else
+     write -x
+  fi
+end

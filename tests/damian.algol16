@@ -1,0 +1,32 @@
+program example
+    local x
+    local y, z
+    local chucktest'a
+    local under_score
+begin
+    read  x;
+    write x;
+    
+    under_score := 0;
+
+    while x <> 0 do
+        y := 100;
+        while y > 0 do
+            z := 100;
+            while z <> 50 do
+              z := z - 10;
+              under_score := under_score + 1
+            done;
+            y := y - 2;
+            under_score := under_score + 1
+        done;
+        x := x - 1;
+        under_score := under_score + 1
+    done;
+
+    if under_score <> 30100 then
+      write -31
+    else
+      write 31
+    fi
+end
